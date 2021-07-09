@@ -22,4 +22,21 @@ lista:
 cursos = ['informática', 'meio ambiente', 'agroindústria']
 
 """  1. Armazene os nomes de alguns de seus amigos em uma lista chamada nomes. Exiba o nome """
-nomes = ['achilles', 'Jardiele', 'Dilene', 'Wal', 'Ivonaldo', 'Paulinho']
+nomes = ['achilles', 'Dilene', 'Wal', 'Ivonaldo', 'Paulinho']
+print(nomes[0])
+print(nomes[1])
+print(nomes[2])
+print(nomes[3])
+print(nomes[4])
+
+
+""" 2. Digamos que você vá oferecer uma festa de aniversário.  """
+""" 1. Crie uma lista de convidados. 2. Exiba uma mensagem convite para cada convidado. """
+
+CONVIDADOS = ["Karla", "Erik", "Oliver", "Guido"]
+
+
+print(CONVIDADOS[0] + "É meu aniversário e você não pode perder a melhor festa de todas! Venha se divertir comigo, participar de diversas brincadeiras e comer muitas guloseimas!")
+print(CONVIDADOS[1] + "É meu aniversário e você não pode perder a melhor festa de todas! Venha se divertir comigo, participar de diversas brincadeiras e comer muitas guloseimas!")
+print(CONVIDADOS[2] + "É meu aniversário e você não pode perder a melhor festa de todas! Venha se divertir comigo, participar de diversas brincadeiras e comer muitas guloseimas!")
+print(CONVIDADOS[3] + "É meu aniversário e você não pode perder a melhor festa de todas! Venha se divertir comigo, participar de diversas brincadeiras e comer muitas guloseimas!")
