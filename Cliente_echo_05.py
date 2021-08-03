@@ -8,12 +8,12 @@ def main():
     while True:
         nota1 = input("Nota 1 : ")
         nota2 = input("Nota 2 : ")
-        notas = nota1+'x'+nota2
-        sock.sendto(notas.encode(), ('127.0.0.1', 50000))
-        print("Meu endereço e:  ", sock.getsockname())
+        sock.sendto(nota1.encode(), ('127.0.0.1', 50000))
+        sock.sendto(nota2.encode(), ('127.0.0.1', 50000))
         data, address = sock.recvfrom(MAXBYTES)
-        if sock.recvfrom < 7:
-            final = input("Nota da final : ")
+        final = data.encode()
+        if float(final) < 7:
+            input("Nota da final : ")
             sock.sendto(final.encode(), ('127.0.0.1', 50000))
         print("Servidor responde: {}".format(data.decode()))
     sock.close()

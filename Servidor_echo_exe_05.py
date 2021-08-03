@@ -7,14 +7,10 @@ def main():
     sock.bind(('127.0.0.1', 50000))
     while True:
         data, address = sock.recvfrom(MAXBYTES)
-        new_data = data.decode()
-        notas = new_data.split("x")
-        media = (float(notas[0])+float(notas[1]))/2
-        if media < 7:
-            mfinal = (float(media)+float(new_data))/2
-            sock.sendto(float(mfinal).encode(), address)
-        else:
-            sock.sendto(float(media).encode(), address)
+        nota1 = data.decode()
+        nota2 = data.decode()
+        media = (float(nota1)+float(nota2))/2
+        sock.sendto(media.encode(), address)
     sock.close()
     return 0
 
