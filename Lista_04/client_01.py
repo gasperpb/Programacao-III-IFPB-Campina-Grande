@@ -9,7 +9,7 @@ def main():
 
     print(" Socket: ", sock.getsockname())
 
-    msg = {"Dia 1": "30C", "Dia 2": "29C", "Dia 3": "42C"}
+    msg = {"campina grande": "30C", "sao paulo": "55C", "Rio": "17C"}
     sock.sendall(pickle.dumps(msg))
 
     sock.close()
